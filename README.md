@@ -21,13 +21,13 @@ A webhook server written in rust.
 ### push
 - `/get/push`, 参数
     - `title`: 主题
-    - `body`: 正文
+    - `body`: 正文（选填）
 - `/post/json/push`, 接收`json`格式数据，参数
     - `title`: 主题
-    - `body`: 正文
+    - `body`: 正文（选填）
 - `/post/form/push`, 接收`form`格式数据，参数
     - `title`: 主题
-    - `body`: 正文
+    - `body`: 正文（选填）
 
 ## Docker部署
 ```sh
