@@ -9,22 +9,25 @@ A webhook server written in rust.
 ## 接口
 ### email
 - `/get/email`, 参数
-    - `subject`: 主题
+    - `title`: 主题
     - `body`: 正文
 - `/post/json/email`, 接收`json`格式数据，参数
-    - `subject`: 主题
+    - `title`: 主题
     - `body`: 正文
 - `/post/form/email`, 接收`form`格式数据，参数
-    - `subject`: 主题
+    - `title`: 主题
     - `body`: 正文
 
 ### push
 - `/get/push`, 参数
-    - `text`: 文本
+    - `title`: 主题
+    - `body`: 正文
 - `/post/json/push`, 接收`json`格式数据，参数
-    - `text`: 文本
+    - `title`: 主题
+    - `body`: 正文
 - `/post/form/push`, 接收`form`格式数据，参数
-    - `text`: 文本
+    - `title`: 主题
+    - `body`: 正文
 
 ## Docker部署
 ```sh
