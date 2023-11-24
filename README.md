@@ -32,11 +32,14 @@ A webhook server written in rust.
 ## Docker部署
 ```sh
 PORT=8080 # 改成你的端口号
+# email
 EMAIL=xxxx@xxx.com # 改成你的邮箱
 SMTP_SERVER=smtp.xxxx.com # 改成你的smtp服务器
 USER_NAME=xxxxxx # 改成你的smtp服务器用户名
 PASSWORD=xxxxxx # 改成你的smtp服务器密码
+# push
 PUSHKEY=xxxxxx # 改成你的pushdeer的pushkey
+# 部署
 docker run -d --name webhook -p $PORT:8080 hlf01/webhook --email $EMAIL --server $SMTP_SERVER --username $USER_NAME --password $PASSWORD --pushkey $PUSHKEY
 ```
 
