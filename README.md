@@ -72,5 +72,5 @@ docker build --tag webhook --no-cache .
 ```sh
 cargo build --release
 # 运行
-./target/release/webhook
+./target/release/webhook --email $EMAIL --server $SMTP_SERVER --username $USER_NAME --password $PASSWORD --pushkey $PUSHKEY
 ```
